@@ -37,10 +37,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }} #mhmmmmm
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=specklew_InPostOrTQS
-      - name: 'gcr.io/cloud-builders/docker'
-        args: [ 'build', '-t', 'us-central1-docker.pkg.dev/gcp-project-[your_project_id]/gcp-project-docker-repo/gcp-project:0.0.1', '.' ]
-      - name: 'gcr.io/cloud-builders/docker'
-        args: [ 'push', 'us-central1-docker.pkg.dev/gcp-project-[your_project_id]/gcp-project-docker-repo/gcp-project:0.0.1' ]
-    images: [ 'us-central1-docker.pkg.dev/gcp-project-[your_project_id]/gcp-project-docker-repo/gcp-project:0.0.1' ]
+#      - name: 'gcr.io/cloud-builders/docker'
+#        args: [ 'build', '-t', 'us-central1-docker.pkg.dev/gcp-project-[your_project_id]/gcp-project-docker-repo/gcp-project:0.0.1', '.' ]
+#      - name: 'gcr.io/cloud-builders/docker'
+#        args: [ 'push', 'us-central1-docker.pkg.dev/gcp-project-[your_project_id]/gcp-project-docker-repo/gcp-project:0.0.1' ]
+#    images: [ 'us-central1-docker.pkg.dev/gcp-project-[your_project_id]/gcp-project-docker-repo/gcp-project:0.0.1' ]
 
 
