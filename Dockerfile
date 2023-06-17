@@ -15,6 +15,6 @@
 #CMD ["java", "-jar", "airquality.jar"]
 FROM openjdk:19
 EXPOSE 3000
-ADD target/inpostor.jar inpostor_jar.jar
+#ADD target/inpostor.jar inpostor_jar.jar
 ENTRYPOINT ["java", "-jar", "/inpostor.jar"]
 #chuj
