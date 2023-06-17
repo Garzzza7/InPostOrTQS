@@ -6,7 +6,7 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
-#  nice comment
+#  nice commentas asdas dsadsa
   build:
     name: Build and analyze
     runs-on: ubuntu-latest
